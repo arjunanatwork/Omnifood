@@ -105,6 +105,38 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.icon-small {
+	display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /*align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/*LINK*/
+/* ------------------------------------------------------------------------------ */
+
+a:link,
+a:active{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
 
 /*BUTTON*/
 
@@ -256,7 +288,7 @@ header {
 /*---------------------------------------------------------*/
 
 .section-steps {
-	background-color: #f4f4f4;
+	background-color: #f0eeee;
 }
 
 .steps-box:first-child {
@@ -297,6 +329,25 @@ header {
     margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+	border:  0;
+}
+
 .btn-app img {
 	margin-right: 10px;
+}
+
+/*---------------------------------------------------------*/
+/*CITY FEAUTRES*/
+/*---------------------------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+	margin-bottom: 5px;
 }

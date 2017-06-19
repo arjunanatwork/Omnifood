@@ -78,7 +78,7 @@ $(document).ready(function() {
         offset: '50%'
     });
 
-     $('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass('animated pulse');
     }, {
         offset: '50%'
@@ -97,4 +97,20 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }
     })
+
+    var map = new GMaps({
+        div: '.map',
+        lat: 38.7436057,
+        lng: -9.05,
+        zoom:12
+    });
+
+    map.addMarker({
+        lat: 38.7436057,
+        lng: -9.2302437,
+        title: 'Lisbon',
+       infoWindow: {
+           content: '<p>Our Lisbon Headquaters</p>'
+       }
+    });
 })
